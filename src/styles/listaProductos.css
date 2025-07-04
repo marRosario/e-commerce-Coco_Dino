@@ -1,0 +1,152 @@
+
+
+
+.productos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.producto-card {
+  display: flex;
+  align-items: center;
+  position:relative;
+  justify-content: space-between;
+  background-color: #fff7e6;
+  border: 2px solid #ffd99c;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-height: 140px;
+}
+.producto-card img {
+  width: 100px;
+  height: auto;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+.listaProducto-Titulo{
+font-family:'Macondo Swash Caps', cursive;
+font-size: 40px;
+color:rgb(43, 0, 255);
+margin-top: 30px;
+
+}
+
+.contenido-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contenido-textual {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+
+
+.producto-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+  color: #ff7700;
+  
+}
+
+
+.botones-inferiores {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 5px;
+ 
+}
+
+.botonEditar {
+  background-color: #fff3c1;
+  border: 2px solid #ffd366;
+  border-radius: 5px;
+  padding:2px 6px;
+  color: #8a5e00;
+  transition: background-color 0.2s ease;
+}
+
+.botonEditar:hover {
+  background-color: #ffe595;
+}
+
+.producto-card h3,
+.descripcion-producto {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.producto-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.texto-rojo {
+  color: crimson;
+  font-weight: bold;
+}
+
+.etiqueta-agotado {
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  border-radius: 10px;
+  transform: rotate(-40deg);
+  background-color: crimson;
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 18px;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+
+@media (max-width: 600px) {
+  .producto-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botones-inferiores {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .botones-inferiores button {
+    width: 100%;
+  }
+
+  .listaProducto-Titulo{
+    font-size: 30px;
+    margin-top: 40px;
+
+}
+}
+
+@media (max-width: 500px) {
+.listaProducto-Titulo{
+    font-size: 25px;
+    margin-top: 80px;
+
+}
+
+p.descripcion-producto {
+
+  font-size: 14px;
+}
+
+
+}

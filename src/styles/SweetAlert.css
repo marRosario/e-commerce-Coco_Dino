@@ -1,0 +1,51 @@
+.custom-alert {
+    background-color: #f0f0f0;  
+    color: #333;  
+    font-family: 'Arial', sans-serif;  
+    padding: 0;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    height: auto;  
+    max-width: 200px
+
+}
+
+.custom-alert .swal2-icon {
+    font-size: 10px;
+   
+}
+
+.custom-alert .swal2-title {
+    font-size: 14px;
+    color: #0056b3;
+    padding:0;
+    height: auto;
+    margin-bottom:5px;
+
+}
+.swal2-html-container,
+.custom-alert .swal2-text {
+font-size: 12px;
+color:#555555;
+padding:0;
+line-height:1.2;
+
+}
+
+
+
+.custom-alert .swal2-confirm {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-alert .swal2-confirm:hover {
+    background-color: #45a049;
+}

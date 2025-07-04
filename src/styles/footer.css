@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Raleway:ital,wght@0,100..900&display=swap");
+
+
+.footer-coco {
+  background: linear-gradient(to top, #7a42f2 0%, #ffc3a0 100%);
+  padding: 2.5rem 1.5rem;
+}
+
+
+
+
+.footer-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-columna {
+  flex: 1 1 300px;
+}
+
+.logo-footer {
+   
+  width: 130px;
+  margin-bottom: 1rem;
+ 
+}
+
+.footer-frase {
+    font-family:"Macondo Swash Caps", cursive ; 
+  font-size: 1rem !important;
+  color: #faf9f6;
+  line-height: 1.5;
+}
+
+.redes-footer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.icono-red1 {
+    
+  color: #E1306C; 
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icono-red1:hover {
+  transform: scale(1.2);
+  color: #B1225C;
+}
+
+.icono-red2 {
+
+  color: #25D366; 
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icono-red2:hover {
+  transform: scale(1.2);
+  color: #1ebe54;
+}
+
+
+
+
+.info-footer p {
+font-family:"Macondo Swash Caps", cursive ;
+  font-size: 1.1rem;
+  color: #faf9f6;
+  margin-bottom: 0.5rem;
+ text-shadow: 1px 1px 2px rgba(0,0,0,0.2) !important;
+}
+  
+
+.logo-y-frase {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-footer {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.footer-frase {
+  max-width: 400px;
+  font-size: 0.95rem;
+  color: #faf9f6;
+  line-height: 1.5;
+}
+

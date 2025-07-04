@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Raleway:ital,wght@0,100..900&display=swap");
+
+ .separador-icono{
+
+  margin:50px 50px;
+ }
+
+.fondo-edad {
+  background-color: #fff7d4;
+  padding: 3rem 1rem;
+  border-radius: 0 0 0 35%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 24px rgba(255, 85, 0, 0.3); 
+}
+  
+
+@media (max-width: 768px) {
+  .fondo-edad {
+    border-radius: 0 0 0 60px;
+  }
+}
+
+.cards-por-edad {
+  margin-bottom: 2rem; 
+  padding-top: 0;
+
+  
+}
+
+
+
+.card-edad {
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.card-edad:hover {
+  transform: scale(1.02) !important;
+}
+
+
+.card-edad .img-edad {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+
+.card.card-edad .card-edad-body {
+  min-height: 30px;
+  padding:0;
+}
+
+
+
+
+
+.text-center-edad{
+    font-size: 1rem;
+  font-family: 'Macondo Swash Caps', cursive;
+}

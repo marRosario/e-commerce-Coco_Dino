@@ -1,0 +1,66 @@
+.fondo-contacto {
+  background-image: url("../assets/fondo-contacto.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.contacto {
+ font-size: 2rem;
+  font-family: 'Macondo Swash Caps', cursive;
+  color: #5c4b99;
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.formContacto {
+  background-color: #f3efff;
+  border: 2px solid #d5c8ff;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(92, 75, 153, 0.1);
+}
+
+.form-label {
+  color: #5c4b99;
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1.5px solid #bfefff;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #89dfff;
+  box-shadow: 0 0 0 0.2rem rgba(165, 233, 255, 0.4);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.boton-contacto {
+  background-color: #ff8b8b;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffc3a0;
+  transform: translateY(-2px);
+}

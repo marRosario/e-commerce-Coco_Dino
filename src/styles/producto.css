@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Raleway:ital,wght@0,100..900&display=swap");
+
+
+.container-card {
+  position: relative;
+  top: 100px;
+}
+
+/* Fila de tarjetas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Columnas responsivas */
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Tarjeta */
+.card {
+ 
+  width: 16rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 50px;
+ position:relative;
+}
+
+.tituloProductos {
+  font-family: 'Macondo Swash Caps',cursive;
+  font-size: 30px;
+  color:rgb(137, 21, 246);
+  margin-top: 20px;
+}
+
+.etiqueta-agotado {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  transform: rotate(-40deg);
+  background-color: crimson;
+  color: white;
+  font-size: 0.75rem;
+  padding: 5px 55px;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.btn-desactivado {
+  background-color: #ccc !important;
+  color: #666 !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+
+
+
+
+.card-img-top {
+  height: 180px;
+  object-fit: contain;
+  width: 100%;
+  background-color: #5d9edf;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  min-height: 250px;
+
+}
+
+
+
+.card-img-top:hover {
+  transform: scale(1.1); 
+}
+
+
+.card-body {
+  justify-content: space-between; 
+  padding:1rem;
+  min-height: 160px; 
+  border-radius: 0px 0px 10px 10px;
+  min-height: 180px;
+}
+
+/* Título del producto */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  min-height: 48px; 
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.precio {
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+
+
+
+/*el producto agotado */
+.imagen-container {
+  position: relative;
+}
+
+
+
+
+
+.disabled {
+  pointer-events: none; /*  el botón ya no es  clickeable */
+  opacity: 0.6; 
+  cursor: not-allowed; 
+}
+
+.alert-busqueda {
+  background-color: #ffe7e7;
+  color: #a80000;
+  border: 2px dashed #ff4d4d;
+  font-weight: bold;
+  font-family: 'Macondo Swash Caps', cursive;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  animation: suaveZoom 0.3s ease-in-out;
+}
+
+@keyframes suaveZoom {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 550px){
+.tituloProductos{
+  font-family: 'Macondo Swash Caps',cursive;
+  font-size: 22px;
+ 
+  margin-top: 80px;
+}
+}

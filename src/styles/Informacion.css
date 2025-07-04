@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Raleway:ital,wght@0,100..900&display=swap");
+
+
+
+
+.informacion-container{
+
+background-image: url("../assets/fondo-informacion.png"); 
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  height: 100vh;
+   width: 100%; 
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  top:auto
+ 
+}
+
+h1 {
+  font-family: 'Macondo Swash Caps', cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+ margin-bottom: 50px;
+ 
+}
+
+.informacion-section {
+  font-family: "Macondo Swash Caps", cursive;
+  font-size: 18px;
+  max-width: 800px; 
+  padding-top: 5px;
+  color: rgb(61, 60, 60);
+  text-align: center; 
+  margin-top: 10px;
+  
+}
+
+@media (min-width: 1024px) {
+  .informacion-container {
+    min-height: 90vh; 
+    padding-top: 30px; 
+  align-items: flex-start;
+  }
+
+
+
+.informacion-section {
+    margin-top: 0; 
+    padding-top: 20px; 
+  }
+
+}
+
+
+
+
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+
+  
+}
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 1.8rem; 
+    margin-top: 20px; 
+    padding: 10px; 
+  }
+.informacion-section {
+    margin-top: 0px; 
+  }
+
+@media (max-width: 560px) {
+  .informacion-container {
+    min-height: 100vh; 
+    
+  }
+}
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 20px; 
+    margin-top: 10px;
+    padding:10px ;
+  font-weight: bold;
+  }
+.informacion-container {
+    padding-top: 90px; 
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px; 
+    font-weight: bold;
+    margin-top: 100px; 
+  }
+}
+
+.informacion-container{
+padding-top: 0;
+
+}
+

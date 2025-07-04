@@ -1,0 +1,360 @@
+.carrito-container {
+  margin: 20px auto;
+  padding: 10px;
+  max-width:80%; 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgb(248, 235, 222);
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.carritoVacio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 50px;
+}
+
+.carrito-producto {
+  display: grid;
+  grid-template-columns: 120px 80px 120px 120px 120px auto;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.carrito-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.carrito-nombre,
+.carrito-precioSubtotal,
+.carrito-precio,
+.carrito-cantidad {
+  flex: 1;
+  text-align: left;
+  font-size: 12px;
+ 
+}
+
+.carrito-precio {
+  font-family: "Courier New", Courier, monospace;
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+  text-align: right;
+  width: 100px;
+  min-width: 80px;
+}
+.carrito-precioSubtotal {
+  display: flex;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  align-items: center;
+  margin: 0;
+  margin-right: 20px;
+  width: 80px;
+}
+
+.carrito-cantidad {
+  font-size: 14px;
+  margin: 0 5px;
+  color: #333;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.carrito-cantidad-numero {
+  font-size: 16px;
+  font-weight: bold;
+  color: #28a745;
+  border: 1px solid #28a745;
+  margin-left: 2px;
+}
+
+.carrito-botones {
+  display: flex;
+  gap: 5px;
+  align-items: center; 
+  justify-content: center;
+
+}
+
+.fila-carrito {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  gap: 50px;
+  
+}
+
+
+
+.boton-accion {
+  border: none;
+  padding: 1px 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.boton-mas,
+.boton-menos,
+.boton-eliminar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  min-width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.boton-mas {
+  background-color: #28a745;
+  border-radius: 3px;
+  border:none;
+}
+
+.boton-mas:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-menos {
+  background-color: #6c757d;
+  border: none;
+  border-radius: 3px;
+}
+
+.boton-menos:hover {
+  background-color: #5a6268;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-eliminar {
+  background-color: #f44336;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  border: none;
+  color: aliceblue;
+  padding: 1px;
+}
+
+.boton-eliminar:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenedorCarrito {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.botonSeguirComprando, .botonComprar  {
+  background-color: #28a745;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  border: none;
+  color: aliceblue;
+  padding: 2px;
+}
+
+.botonSeguirComprando:hover {
+  background-color:#165123;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botonComprar:hover {
+  background-color: #165123;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.boton-vaciar {
+  display: inline-block;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-vaciar:hover {
+  background-color: #d32f2f;
+}
+
+.carrito-total-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carrito-total {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.producto-agotado {
+  opacity: 0.6;
+  position: relative;
+}
+
+.producto-agotado::after {
+  content: "AGOTADO";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: crimson;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .carrito-producto {
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 12px;
+  }
+
+  .carrito-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .carrito-precioSubtotal,
+  .carrito-precio,
+  .carrito-cantidad {
+    text-align: center;
+  }
+
+  .carrito-botones {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .carrito-producto {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .carrito-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .carrito-nombre,
+  .carrito-precioSubtotal,
+  .carrito-precio,
+  .carrito-cantidad {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .fila-carrito {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .carrito-botones {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrito-producto {
+    grid-template-columns: 1fr; /* Una sola columna */
+    grid-template-rows: auto auto auto auto auto;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .carrito-image {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  .carrito-nombre,
+  .carrito-precioSubtotal,
+  .carrito-precio,
+  .carrito-cantidad {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .fila-carrito {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .carrito-botones {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (max-width: 966px) {
+  .carrito-producto {
+    grid-template-columns: 1fr 1fr; /* Mantiene dos columnas */
+    gap: 10px;
+  }
+
+  .carrito-botones {
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .boton-mas,
+  .boton-menos,
+  .boton-eliminar {
+    min-width: 22px; 
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .fila-carrito {
+    gap: 30px; 
+  }
+}
+
+@media (max-width: 765px) {
+  .carrito-producto {
+    grid-template-columns: 1fr; 
+    gap: 8px;
+    text-align: center;
+  }
+
+  .carrito-botones {
+    flex-direction: row; 
+    gap: 5px;
+  }
+}

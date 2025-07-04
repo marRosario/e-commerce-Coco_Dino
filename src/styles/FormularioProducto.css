@@ -1,0 +1,78 @@
+.container-nuevoProducto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 90px); /* Altura de la ventana menos el alto de la barra de navegación */
+  padding: 0;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.container-nuevoProducto form  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin:100px auto; 
+  padding: 20px;
+  border: 2px dashed #7b2cbf;
+   border-radius: 12px;
+background: rgba(255, 255, 255, 0.7);
+backdrop-filter: blur(10px);
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+
+}
+
+/* Campos del formulario */
+form div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: none; 
+  height: 100px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none; 
+  border: 1px solid #4caf50; 
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); 
+}
+
+
+
+
+/* Título */
+h2.agregar {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff; 
+  margin-top: 20px; 
+  margin-bottom: 30px; 
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Raleway:ital,wght@0,100..900&display=swap");
+
+
+
+main{
+background: linear-gradient(to right, #fcf6a9, #ffebd3);
+
+}
+.card-body-custom {
+  background-color: rgb(248, 235, 222); 
+  color: #333; 
+  padding: 1rem; 
+ border-radius: 15px;
+ max-width: none;
+ height: auto ;
+
+}
+
+
+.text-price-custom{
+font-family: "Courier New", Courier, monospace;
+font-weight: bold;
+}
+
+.card-custom {
+  border-radius: 15px !important; 
+  overflow: hidden ; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+margin-bottom: 2rem;
+height: auto;
+}
+
+
+
+
+.mi-app-descripcion{
+ font-size: 14px ;
+  
+}
+
+
+
