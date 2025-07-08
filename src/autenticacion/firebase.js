@@ -6,7 +6,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyBGD26QfKd2tblozZoEySwL-jABKRXWvDw",
   authDomain: "autenticacion-aa5c2.firebaseapp.com",
   projectId: "autenticacion-aa5c2",
-  storageBucket: "autenticacion-aa5c2.appspot.com", // ✅ Corrección en storageBucket
+  storageBucket: "autenticacion-aa5c2.appspot.com", 
   messagingSenderId: "1050723806541",
   appId: "1:1050723806541:web:85c82f425c4af4e0a19b04"
 };
